@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Student RegiStration System</title>
+</head>
+
+<body>
+
+    <header class="Header">
+        <img class="studentLogo" src="./images/studentLogo.png" alt="Student logo">
+    </header>
+
+
+    <h1 class="MainHeading">Student RegiStration System</h1>
+    <main class="Container">
+        <section class="side1">
+            <form class="MainForm" onsubmit="Handlefrom(event)">
+                <div class="FornMainHeading">
+                    <p><b>Student Form</b></p>
+                </div>
+                <div class="Input">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" class="Inputs" placeholder="First name">
+                </div>
+                <div class="Input">
+                    <label for="LastName">Last Name</label>
+                    <input type="text" id="LastName" class="Inputs" placeholder="Last name">
+                </div>
+                <div class="Input">
+                    <label for="Class">Class</label>
+                    <input type="number" id="Class" class="Inputs" placeholder="Class">
+                </div>
+                <div class="Input">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" class="Inputs" placeholder="Enter your email">
+                </div>
+                <div class="Input">
+                    <label for="RollNo">Roll No</label>
+                    <input type="number" id="RollNo" class="Inputs" placeholder="Enter your roll No">
+                </div>
+                <input type="submit" class="Btn" />
+            </form>
+        </section>
+
+        <section class="side2">
+            <table border="1" class="ShowStudentTable">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Class</th>
+                    <th>Email</th>
+                    <th>RollNO</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
+
+
+
+

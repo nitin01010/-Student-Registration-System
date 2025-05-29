@@ -1,0 +1,315 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 2px 2px #f2f2f2;
+    background-color: white;
+    height: 60px;
+}
+.studentLogo{
+    height: 40px;
+}
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f2f2f2;
+    height: 100vh;
+    gap: 20px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.side1{
+    width: 40%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 10px 1px 1px yellow;
+}
+
+.side2{
+    width: 40%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 10px 1px 1px yellow;
+}
+
+.MainHeading{
+    text-align: center;
+    font-size: 14px;
+    outline: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    color: blue;
+}
+.MainForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Input{
+    display: flex;
+    flex-direction: column;
+}
+.Input label{
+    font-weight: 800;
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.Inputs{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px black;
+}
+
+.Btn{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: 2px 5px 1px 1px yellow;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.FornMainHeading{
+    box-shadow: 2px 5px 1px 1px yellow;
+    padding: 2px;
+}
+.FornMainHeading p{
+    font-weight: 800px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+.StudentHeader{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.StudenRow{
+    background-color: orange;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+table td{
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.ButtonSection{
+    display: flex;
+    gap: 5px;
+} */
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 2px 2px #f2f2f2;
+    background-color: white;
+    height: 60px;
+}
+
+.studentLogo {
+    height: 40px;
+}
+
+.MainHeading {
+    text-align: center;
+    font-size: 18px;
+    outline: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    color: blue;
+}
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.side1,
+.side2 {
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 10px 1px 1px yellow;
+}
+
+/* Scrollable and hidden scrollbar for side2 */
+.side2 {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.side2::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* Optional for Firefox */
+.side2 {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.side2::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.MainForm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Input {
+    display: flex;
+    flex-direction: column;
+}
+
+.Input label {
+    font-weight: 800;
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+.Inputs {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px black;
+}
+
+.Btn {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    font-size: 16px;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: 2px 5px 1px 1px yellow;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.FornMainHeading {
+    box-shadow: 2px 5px 1px 1px yellow;
+    padding: 2px;
+}
+
+.FornMainHeading p {
+    font-weight: 800;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.StudentHeader {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.StudenRow {
+    background-color: orange;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.ButtonSection {
+    display: flex;
+    gap: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side1,
+    .side2 {
+        width: 100%;
+    }
+
+    .MainHeading {
+        font-size: 16px;
+    }
+
+    .Inputs {
+        font-size: 14px;
+    }
+
+    .Btn {
+        font-size: 14px;
+    }
+}
